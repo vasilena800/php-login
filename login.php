@@ -25,7 +25,7 @@ if(!empty($_POST['username']) && !empty($_POST['pwhash'])):
 	if(count($results) > 0 && password_verify($_POST['pwhash'], $results['pwhash']) ){
 
 		$_SESSION['user_id'] = $results['id'];
-		echo '<h4 style="color:green;">You are logged in as: </h4>'.$un;
+		echo '<h4 style="color:lightblue;">You are logged in as: </h4>'.$un;
 
 	} else {
 		$message = 'Sorry, those credentials do not match';
@@ -58,7 +58,7 @@ if(!empty(filter_input(INPUT_POST, 'submit'))) {
 	
 	if (password_verify($pw, $pwhash)){
 		
-		echo '<br><h2 style="color:green;">You are logged in as: '.$un.'</h2><br>
+		echo '<br><h2 style="color:lightblue;">You are logged in as: '.$un.'</h2><br>
         <img src="img.jpeg" alt="secret page image"> <br><br><br>
         <a href="logout.php">Logout?</a>
 ';
@@ -73,6 +73,9 @@ if(!empty(filter_input(INPUT_POST, 'submit'))) {
 }
 ?>
 
+
+
+
 <div><?php if(!empty($message)): ?>
 		<p><?= $message ?></p>
 	<?php endif; ?>
@@ -85,5 +88,8 @@ if(!empty(filter_input(INPUT_POST, 'submit'))) {
     <input name="pw" type="password" placeholder="Password"  required/>
     <input type="submit" name="submit" value="Login"/>
 </form>
+
+<?php require 'footer.php';?>
+F
 </body>
 </html>

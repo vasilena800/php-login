@@ -10,14 +10,15 @@
         
 footer {
   right: 0;
-  bottom: 0;
+  bottom:-100px;
   left: 0;
   padding: 20px;
   background-color: #efefef;
   text-align: center;
-   position:absolute;
-   left:0px;
+  position:fixed;
+left:0px;
    bottom:0px;
+
 }
         </style>
      

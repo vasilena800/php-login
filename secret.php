@@ -43,7 +43,7 @@ if( isset($_SESSION['username']) ){
 		<br />Welcome <?= $user['username']; ?>
 		<br /><br />You are successfully logged in!
 		<br /><br />
-        <img src="img.jpeg" alt="ha" style="width:25%;">
+        <img src="img.jpeg" alt=" secretimg" style="width:25%;"> 
        <br /><br />
 		<a href="logout.php">Logout?</a>
 

@@ -18,11 +18,11 @@ input[type="text"], input[type="password"]{
 
 input[type="submit"]{
 	padding:10px;
-	color:black;
+	color: black;
 	background:#A9CCE3;
 	width:300px;
 	margin:20px auto;
-	margin-top:0px;
+	margin-top:10px;
 	border:0px;
 	border-radius: 3px;
 	cursor:pointer;
@@ -37,9 +37,14 @@ input[type="submit"]{
 	padding:5px;
 	width:100%;
 	text-align:left;
+    margin-bottom: 130px;
 }
 
 
 h1  {
-color: aliceblue;
+color:lightblue;
+}
+
+a{
+color: lightgoldenrodyellow;
 }
